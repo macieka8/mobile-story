@@ -1,0 +1,17 @@
+{
+    "name": "BuffSystemAssembly",
+    "rootNamespace": "Game",
+    "references": [
+        "GUID:525a27d622651d24e82362b0f71399ee",
+        "GUID:7b2665a8bee43484aa6b32a0575f99bb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,20 @@
+{
+    "name": "QuestSystemAssembly",
+    "rootNamespace": "Game",
+    "references": [
+        "GUID:525a27d622651d24e82362b0f71399ee",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:ac473957ff8234b4a9c5438139ad1005",
+        "GUID:1ceaf42cd9fb70c4189153b3953c4c27",
+        "GUID:8b5dd499e4ce53d4ea6d463fbba65080"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

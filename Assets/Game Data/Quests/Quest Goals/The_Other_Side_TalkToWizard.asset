@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6adcfc3c4c78724cada4a2fe6d4f748, type: 3}
+  m_Name: The_Other_Side_TalkToWizard
+  m_EditorClassIdentifier: 
+  _descripton: Talk to Wizard
+  _onCompletedEvents:
+  - {fileID: 11400000, guid: 679eaec4d6e47114887f187628bce9da, type: 2}
+  _story: {fileID: 11400000, guid: 10a9e4612c2a66447ad87158ceb4ec9d, type: 2}
+  _tagToEncounter: Quest.Update.The_Other_Side.1

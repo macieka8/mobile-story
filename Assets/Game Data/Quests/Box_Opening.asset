@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a862105e30a74b140b1ed473518fc487, type: 3}
+  m_Name: Box_Opening
+  m_EditorClassIdentifier: 
+  _questPrefab: {fileID: 4129245514882309448, guid: 8c8d6554e0604a6468117454a69cc251, type: 3}
+  _questName: Box_Opening
+  _description: Destroy Boxes
+  _goalDatas:
+  - GoalData: {fileID: 11400000, guid: 5cea6226d1a93c8459e1ef9d83cf4663, type: 2}
+    HideBehind: {fileID: 0}

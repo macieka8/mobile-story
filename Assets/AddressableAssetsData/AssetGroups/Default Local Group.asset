@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c016b3f9c3606364e93a0bc00e94d535
+  m_SerializeEntries:
+  - m_GUID: bd1700b354027174ea76c77ac9c67db4
+    m_Address: Box
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  - m_GUID: 8151902a0061cd34fa2a2498efbe4f2f
+    m_Address: Goblin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  - m_GUID: 92e8bd99f51d975489061d2d4a5e21b7
+    m_Address: Minotaur
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  - m_GUID: 2e566aaf52a071e409836bd59a28cd55
+    m_Address: Player
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  - m_GUID: 0bff6b8b3b6ba674f848fdd9cd142001
+    m_Address: Uma
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  - m_GUID: d356cea2060a02e41ae8fad0c6048fb5
+    m_Address: Umo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  - m_GUID: a82cddcfe9b29e94098accc0ec54a784
+    m_Address: Wizard
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  - m_GUID: 63310d8daeedcec4b93eb4846fca592e
+    m_Address: Blocking Stone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Entity Identifier
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c6b73074c1609f34fb54d141dab8f448, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0690579332c811640990cc6b4da0110b, type: 2}
+    - {fileID: 11400000, guid: f817c4382654bdf4daa86195f8259cc7, type: 2}

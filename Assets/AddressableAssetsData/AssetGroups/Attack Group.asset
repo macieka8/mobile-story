@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Attack Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Attack Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 089f6d20229ccf640a78fe41d7c2e523
+  m_SerializeEntries:
+  - m_GUID: 98b769fa79b3d954e8a4324c32cc1477
+    m_Address: Stone Rain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 68a7ccb5f7e2b5e4ba6a42b688339f10
+    m_Address: Simple Attack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 879225ae119f4cd4c9edeab3a20e4c43
+    m_Address: Poison Potion Attack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: de77732e04e32ea4993e9420108f5d4a
+    m_Address: Goblin Dash
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 01e2cc90dce5dbb43bd017f749e1e72c
+    m_Address: Fireball
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d187354289b17db4c8b47a596e76fbd9
+    m_Address: Minotaur Smash
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8998e2b1206c404dad8e56a3d3cbedd
+    m_Address: Dash
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c6b73074c1609f34fb54d141dab8f448, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6ab430b2347764948b1bbe6b730d2e61, type: 2}
+    - {fileID: 11400000, guid: 1bc943c2342ac5948bbf6623e3e32efc, type: 2}

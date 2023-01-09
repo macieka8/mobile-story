@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a862105e30a74b140b1ed473518fc487, type: 3}
+  m_Name: The_Other_Side
+  m_EditorClassIdentifier: 
+  _questStartedGameEvent: {fileID: 11400000, guid: 3a775c11c0aae4f44a27285e6b207783, type: 2}
+  _questFinishedGameEvent: {fileID: 11400000, guid: 368fcb60eefe0864aa90ca0f6da80eef, type: 2}
+  _questPrefab: {fileID: 4129245514882309448, guid: 8c8d6554e0604a6468117454a69cc251, type: 3}
+  _questName: The_Other_Side
+  _description: Help Wizard get to the other side of the stones.
+  _goalDatas:
+  - GoalData: {fileID: 11400000, guid: b9413b3117be5ac458ba8ccaabea5a50, type: 2}
+    HideBehind: {fileID: 0}
+  - GoalData: {fileID: 11400000, guid: e6416fa7a2fc5134188c2be8147b87b6, type: 2}
+    HideBehind: {fileID: 11400000, guid: b9413b3117be5ac458ba8ccaabea5a50, type: 2}

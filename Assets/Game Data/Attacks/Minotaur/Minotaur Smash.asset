@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6894f0de3304d5e4a871da5a70d386c1, type: 3}
+  m_Name: Minotaur Smash
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _description: 
+  _cooldownInSeconds: 3
+  _castTime: 2
+  _animationName: Attack
+  _damage: 6
+  _attackDiameter: 5
+  _distanceFromCaster: 2
+  _attackFilter:
+    useTriggers: 1
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 1
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  _hitAttackPrefab: {fileID: 1975731637818880003, guid: 548f60745651bea44accc32fb20712bb, type: 3}

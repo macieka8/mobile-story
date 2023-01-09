@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9244ebaa0b05bc043afb57dfd7ae6b0a, type: 3}
+  m_Name: Destroy 3 Boxes
+  m_EditorClassIdentifier: 
+  _descripton: Destroy 3 Boxes
+  _requiredKillCount: 3
+  _entityType: {fileID: 11400000, guid: bd1700b354027174ea76c77ac9c67db4, type: 2}

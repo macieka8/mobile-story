@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a862105e30a74b140b1ed473518fc487, type: 3}
+  m_Name: Less_Green
+  m_EditorClassIdentifier: 
+  _questStartedGameEvent: {fileID: 11400000, guid: dd4941393da58cc48827ac323751b777, type: 2}
+  _questFinishedGameEvent: {fileID: 11400000, guid: 903b226d25de0ea42ab79e2c8eebf906, type: 2}
+  _questPrefab: {fileID: 4129245514882309448, guid: 8c8d6554e0604a6468117454a69cc251, type: 3}
+  _questName: Less_Green
+  _description: Kill Goblins
+  _goalDatas:
+  - GoalData: {fileID: 11400000, guid: f734a549b7db6434e9f6c123799bfdc4, type: 2}
+    HideBehind: {fileID: 0}

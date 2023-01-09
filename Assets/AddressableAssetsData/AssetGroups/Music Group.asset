@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Music Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Music Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bf934afa662936640a3acbe6c27ffb6e
+  m_SerializeEntries:
+  - m_GUID: b277b1b03ae0ea74d95fdf98e6271361
+    m_Address: After-the-Rain-Inspiring-Atmospheric-Music
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 042a2afe66d382b4aabfa9acd4c6114b
+    m_Address: Endless-Storm
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f37478f1b8eefc4db8a3907ccb7b621
+    m_Address: Golden Ratio
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d145eddf151d18742b35256d89d0dcf1
+    m_Address: Hymn-To-The-Gods
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc1a2b7667633b142895c0be4fee9c3b
+    m_Address: Retro_Single_v1_wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e299fe66c14a0684a9f8794b89e6fcdd
+    m_Address: Retro_Single_v2_wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8cd26af17055d3b46978f75edc03e1bb
+    m_Address: Retro_Single_v3_wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5520521fc25283a4493e53333dfbab99
+    m_Address: Retro_Single_v4_wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a581a6c8ca16faf43a1bf17d58fd170b
+    m_Address: Retro_Single_v5_wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c6b73074c1609f34fb54d141dab8f448, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8e7252491f5c41840be3955d03ca2f39, type: 2}
+    - {fileID: 11400000, guid: 86087d786bc0f134e97dd3b7f34a1092, type: 2}

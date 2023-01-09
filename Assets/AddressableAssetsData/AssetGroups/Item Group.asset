@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Item Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Item Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0c998ffaef1a9d3469721484c0f89bfe
+  m_SerializeEntries:
+  - m_GUID: 5389d7cb3f6ad2f4a833b87eef2056be
+    m_Address: Health Potion
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Item
+  - m_GUID: 8fb1bab210c7b2d408e5e923383284ee
+    m_Address: Poison Throwable Potion
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Item
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c6b73074c1609f34fb54d141dab8f448, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2c057516dd3f1d24a99688251e33a307, type: 2}
+    - {fileID: 11400000, guid: 2e0193f394352ba49a87c2239a1e3eb9, type: 2}

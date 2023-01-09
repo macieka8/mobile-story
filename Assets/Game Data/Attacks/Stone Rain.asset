@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2c7f3e0572b684abfa31d9c92d32e0, type: 3}
+  m_Name: Stone Rain
+  m_EditorClassIdentifier: 
+  _cooldownInSeconds: 20
+  _castTime: 3
+  _animationName: Attack
+  _objectsToSpawn: 5
+  _timeBetweenSpawns: 0.5
+  _rainControllerPrefab: {fileID: 4093919224037772278, guid: f19fff98afffe4a4ea00db8dbef8879b, type: 3}
+  _rainObjectPrefab: {fileID: 31719146022830237, guid: 92a850545a8817f4885319cfb6216ae4, type: 3}
