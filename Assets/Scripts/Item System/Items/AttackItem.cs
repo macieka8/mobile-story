@@ -15,6 +15,7 @@ namespace Game
 
             var inventory = target.GetComponent<Inventory>();
             
+            if (inventory.IsItemOnCooldown(this)) return;
             // Item not found
             if (!inventory.RemoveSingle(this)) return;
             if (!inventory.Contains(this))
@@ -22,6 +23,7 @@ namespace Game
                 InvokeOnActivableRemove();
             }
 
+            inventory.SetItemOnCooldown(this);
             _attackData.Activate(target);
         }
     }

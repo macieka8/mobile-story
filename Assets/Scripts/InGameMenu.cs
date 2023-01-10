@@ -30,8 +30,12 @@ namespace Game
             _triggerMenuAction.action.performed -= HandleMenuOnOff;
             _triggerSpellbookAction.action.performed -= HandleSpellbookOnOff;
         }
-
         void HandleMenuOnOff(InputAction.CallbackContext obj)
+        {
+            ToggleMenu();
+        }
+
+        public void ToggleMenu()
         {
             if (_spellbook.activeInHierarchy)
             {

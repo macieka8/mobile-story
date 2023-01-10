@@ -5,7 +5,8 @@ namespace Game
 {
     public abstract class ActivableItem : Item, IActivable
     {
-        public float CooldownInSeconds => 0f;
+        [SerializeField] float _cooldownInSeconds;
+        public float CooldownInSeconds => _cooldownInSeconds;
 
         public abstract void Activate(GameObject target);
 

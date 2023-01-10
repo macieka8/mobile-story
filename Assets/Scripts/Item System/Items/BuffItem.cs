@@ -13,6 +13,7 @@ namespace Game
             {
                 if (target.TryGetComponent<Inventory>(out var inventory))
                 {
+                    if (inventory.IsItemOnCooldown(this)) return;
                     // item not found
                     if (!inventory.RemoveSingle(this)) return;
                     if (!inventory.Contains(this))
@@ -20,6 +21,7 @@ namespace Game
                         InvokeOnActivableRemove();
                     }
                 }
+                inventory.SetItemOnCooldown(this);
                 buffableEntity.AddBuff(_buff.InitializeBuff(target));
                 InvokeOnActivate();
             }

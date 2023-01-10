@@ -8,6 +8,12 @@ namespace Game
 {
     public class Inventory : MonoBehaviour, IPersistant
     {
+        class FloatCooldown
+        {
+            public float Value;
+            public FloatCooldown(float value) => Value = value;
+        }
+
         struct PersistantData
         {
             public List<(string, int)> ItemSlots;
@@ -16,7 +22,9 @@ namespace Game
         [SerializeField] AssetLabelReference _itemLabel;
         [SerializeField] int _maxItemCount;
         [SerializeField] List<ItemSlot> _startingItems;
+        
         List<ItemSlot> _inventorySlots;
+        Dictionary<ActivableItem, FloatCooldown> _itemsCooldowns = new Dictionary<ActivableItem, FloatCooldown>();
 
         public List<ItemSlot> InventorySlots => _inventorySlots;
 
@@ -35,8 +43,38 @@ namespace Game
             }
         }
 
-        void Start() => OnInventoryChanged?.Invoke();
         void OnEnable() => OnInventoryChanged?.Invoke();
+        void Start() => OnInventoryChanged?.Invoke();
+
+        void Update()
+        {
+            foreach (var entry in _itemsCooldowns)
+            {
+                if (entry.Value.Value > 0f)
+                    _itemsCooldowns[entry.Key].Value -= Time.deltaTime;
+            }
+        }
+
+        public bool IsItemOnCooldown(ActivableItem item)
+        {
+            if (_itemsCooldowns.TryGetValue(item, out var cooldown))
+            {
+                return cooldown.Value > 0f;
+            }
+            return false;
+        }
+
+        public void SetItemOnCooldown(ActivableItem item)
+        {
+            if (_itemsCooldowns.TryGetValue(item, out var cooldown))
+            {
+                _itemsCooldowns[item].Value = item.CooldownInSeconds;
+            }
+            else
+            {
+                _itemsCooldowns.Add(item, new FloatCooldown(item.CooldownInSeconds));
+            }
+        }
 
         public void RemoveAt(int index)
         {
@@ -150,6 +188,7 @@ namespace Game
             var decodedData = dataHandler.ToObject<PersistantData>(data);
 
             // Reset Inventory Slots
+            _itemsCooldowns = new Dictionary<ActivableItem, FloatCooldown>();
             _inventorySlots = new List<ItemSlot>();
             for (int i = 0; i < _maxItemCount; i++)
                 _inventorySlots.Add(new ItemSlot());
