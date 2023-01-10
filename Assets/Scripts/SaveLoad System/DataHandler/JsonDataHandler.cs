@@ -35,7 +35,7 @@ namespace Game
         public GameData Load()
         {
             var fullPath = Path.Combine(Application.persistentDataPath, _persistantDataManager.FileName);
-
+            if (!File.Exists(fullPath)) return null;
             var json = File.ReadAllText(fullPath);
             return JsonConvert.DeserializeObject<GameData>(json, _settings);
         }

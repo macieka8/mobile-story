@@ -37,11 +37,11 @@ namespace Game
 
         public void Load()
         {
+            var gameData = _fileDataHandler.Load();
+            if (gameData == null) return;
             var asyncOp = SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
             asyncOp.completed += (oper) =>
             {
-                var gameData = _fileDataHandler.Load();
-
                 _story.Load(gameData.story, _fileDataHandler);
                 foreach (var persistantObject in FindObjectsOfType<PersistantObject>(true))
                 {
