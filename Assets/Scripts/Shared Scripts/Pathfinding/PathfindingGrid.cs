@@ -197,6 +197,10 @@ namespace Game
         public void RecreateGrid()
         {
             // TODO: Optimize / Recreate only changed parts / chunks
+            if (_cells != null)
+            {
+                _cells.Dispose();
+            }
             _cells = CreateGrid();
             CalculateBlurMovementPenalty();
         }

@@ -74,8 +74,8 @@ namespace Game
             while (!jobHandler.IsCompleted)
             {
                 currentIteration++;
-                if (currentIteration > PATHFINDING_MAX_ITERATION_COUNT)
-                 break;
+                if (currentIteration >= PATHFINDING_MAX_ITERATION_COUNT)
+                    break;
                 yield return null;
             }
             jobHandler.Complete();
@@ -121,7 +121,7 @@ namespace Game
                 if (startCell.CellType == CellType.Wall || endCell.CellType == CellType.Wall) return;
 
                 var pathfindingCells = CreatePathfindingGrid();
-                var visitedSet = new NativeHashSet<int>(100, Allocator.Temp);
+                var visitedSet = new NativeParallelHashSet<int>(100, Allocator.Temp);
                 var openSet = new MinHeap(gridResolution.x * gridResolution.y, pathfindingCells);
 
                 pathfindingCells[startCell.CellIndex] = openSet.Add(pathfindingCells[startCell.CellIndex]);
