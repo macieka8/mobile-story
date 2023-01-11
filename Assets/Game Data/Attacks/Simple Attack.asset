@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6894f0de3304d5e4a871da5a70d386c1, type: 3}
   m_Name: Simple Attack
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: c15f92bc77906f14da9c163d2666f43a, type: 3}
+  _icon: {fileID: 21300000, guid: b7dcf4a959dbb844f8ae3f06bf91f314, type: 3}
   _description: Basic melee attack dealing 2 points of damage.
   _cooldownInSeconds: 1
   _castTime: 0.5
