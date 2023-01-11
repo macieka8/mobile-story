@@ -15,6 +15,15 @@ namespace Game
                 if (buffable.Contains(_buff)) return;
                 buffable.AddBuff(_buff.InitializeBuff(buffable.gameObject));
             }
+            else
+            {
+                var foundBuffable = other.gameObject.GetComponentInParent<BuffableEntity>();
+                if (foundBuffable != null)
+                {
+                    if (foundBuffable.Contains(_buff)) return;
+                    foundBuffable.AddBuff(_buff.InitializeBuff(foundBuffable.gameObject));
+                }
+            }
         }
     }
 }
