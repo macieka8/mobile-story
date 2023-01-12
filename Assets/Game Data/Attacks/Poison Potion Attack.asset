@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bac017e07edebf4682ed0c15ef99351, type: 3}
   m_Name: Poison Potion Attack
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300092, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
+  _icon: {fileID: 21300000, guid: 6242d4805a9e1e44ab7565cdf9856764, type: 3}
+  _description: 
   _cooldownInSeconds: 1
   _castTime: 0.1
   _animationName: Attack

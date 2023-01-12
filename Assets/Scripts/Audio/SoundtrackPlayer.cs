@@ -36,7 +36,7 @@ namespace Game
         {
             if (!_loopSoundtrack) return;
             _clipTimeLeft -= Time.deltaTime;
-            if (_clipTimeLeft < _transitionTime && _transitionCoroutine == null)
+            if (_clipTimeLeft < _transitionTime && _transitionCoroutine == null && _audioClipHandle.IsDone)
             {
                 // Play next track
                 _currentTrackIndex = _currentTrackIndex + 1 >= _soundtrack.Count ? 0 : _currentTrackIndex + 1;
