@@ -7,7 +7,7 @@ namespace Game
     {
         public void LoadScene(string sceneName)
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadSceneAsync(sceneName);
         }
     }
 }

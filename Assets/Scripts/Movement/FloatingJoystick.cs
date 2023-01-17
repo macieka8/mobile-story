@@ -8,19 +8,19 @@ namespace Game
     public class FloatingJoystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
         [SerializeField] OnScreenStick _onScreenStick;
-        [SerializeField] Transform _joystick;
+        [SerializeField] RectTransform _joystick;
 
         Vector2 _originalPosition;
         Vector2 _clickedPosition;
 
         void Awake()
         {
-            _originalPosition = _joystick.position;
+            _originalPosition = _joystick.anchoredPosition;
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            _clickedPosition = Mouse.current.position.ReadValue();
+            _clickedPosition = Pointer.current.position.ReadValue();
             _joystick.position = _clickedPosition;
             _onScreenStick.OnPointerDown(eventData);
         }
@@ -32,7 +32,7 @@ namespace Game
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            _joystick.position = _originalPosition;
+            _joystick.anchoredPosition = _originalPosition;
             _onScreenStick.OnPointerUp(eventData);
         }
     }

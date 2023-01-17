@@ -20,6 +20,7 @@ namespace Game
         float _clipTimeLeft = 0f;
         Coroutine _transitionCoroutine;
         int _lastRandomIndex = -1;
+        float _maxVolume;
 
         void Awake()
         {
@@ -28,8 +29,8 @@ namespace Game
 
         void Start()
         {
+            _maxVolume = _audioSource.volume;
             _audioClipHandle = _soundtrack.LoadTrackAsync();
-            _audioClipHandle.WaitForCompletion();
         }
 
         void Update()
@@ -63,7 +64,12 @@ namespace Game
             _audioClipHandle = _soundtrack.LoadTrackAsync();
             _currentTrackIndex = 0;
 
-            if (_transitionCoroutine != null) StopCoroutine(_transitionCoroutine);
+            if (_transitionCoroutine != null)
+            {
+                StopCoroutine(_transitionCoroutine);
+                _transitionCoroutine = null;
+                _audioSource.volume = _maxVolume;
+            }
             _transitionCoroutine = StartCoroutine(TransitionToClipCoroutine(transition));
         }
 
@@ -84,21 +90,21 @@ namespace Game
         IEnumerator TransitionToClipCoroutine(bool fadeOut = true)
         {
             // Fade Out
-            var maxVolume = _audioSource.volume;
+            _maxVolume = Mathf.Max(_maxVolume, _audioSource.volume);
             float timeLeft = _transitionTime;
             if (fadeOut)
             {
                 while (timeLeft > 0f && _audioSource.isPlaying)
                 {
                     timeLeft -= Time.deltaTime;
-                    _audioSource.volume = Mathf.InverseLerp(0f, _transitionTime, timeLeft) * maxVolume;
+                    _audioSource.volume = Mathf.InverseLerp(0f, _transitionTime, timeLeft) * _maxVolume;
                     yield return null;
                 }
             }
 
             // Play new clip
             if (!_audioClipHandle.IsDone) yield return _audioClipHandle;
-            _audioSource.volume = maxVolume;
+            _audioSource.volume = _maxVolume;
             _audioSource.clip = _audioClipHandle.Result[_currentTrackIndex];
             _audioSource.Play();
 
@@ -109,11 +115,10 @@ namespace Game
             while (timeLeft > 0f && _audioSource.isPlaying)
             {
                 timeLeft -= Time.deltaTime;
-                _audioSource.volume = maxVolume - Mathf.InverseLerp(0f, _transitionTime, timeLeft) * maxVolume;
+                _audioSource.volume = _maxVolume - Mathf.InverseLerp(0f, _transitionTime, timeLeft) * _maxVolume;
                 yield return null;
             }
-
-            _clipTimeLeft = _audioSource.clip.length;
+            _transitionCoroutine = null;
         }
     }
 }
