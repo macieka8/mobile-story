@@ -29,7 +29,7 @@ namespace Game
 
         public virtual void OnDrag(PointerEventData eventData)
         {
-            transform.position = Mouse.current.position.ReadValue();
+            transform.position = Pointer.current.position.ReadValue();
         }
 
         public virtual void OnPointerUp(PointerEventData eventData)

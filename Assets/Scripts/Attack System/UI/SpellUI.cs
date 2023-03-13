@@ -21,7 +21,7 @@ namespace Game
         {
             if (IsHovering)
             {
-                _onHoverInfo.transform.position = Mouse.current.position.ReadValue();
+                _onHoverInfo.transform.position = Pointer.current.position.ReadValue();
             }
         }
 
@@ -30,7 +30,7 @@ namespace Game
             base.OnDrag(eventData);
             if (IsHovering)
             {
-                _onHoverInfo.transform.position = Mouse.current.position.ReadValue();
+                _onHoverInfo.transform.position = Pointer.current.position.ReadValue();
             }
         }
 

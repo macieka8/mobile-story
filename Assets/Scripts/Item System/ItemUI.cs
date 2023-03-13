@@ -26,7 +26,7 @@ namespace Game
         {
             if (IsHovering)
             {
-                _onHoverInfo.transform.position = Mouse.current.position.ReadValue();
+                _onHoverInfo.transform.position = Pointer.current.position.ReadValue();
             }
         }
 
