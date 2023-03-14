@@ -37,8 +37,13 @@ namespace Game
 
         public void Load()
         {
+            TryLoad();
+        }
+
+        public bool TryLoad()
+        {
             var gameData = _fileDataHandler.Load();
-            if (gameData == null) return;
+            if (gameData == null) return false;
             var asyncOp = SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
             asyncOp.completed += (oper) =>
             {
@@ -56,6 +61,7 @@ namespace Game
                     }
                 }
             };
+            return true;
         }
     }
 }
